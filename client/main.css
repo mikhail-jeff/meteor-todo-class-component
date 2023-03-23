@@ -1,0 +1,12 @@
+body {
+	padding: 10px;
+	font-family: sans-serif;
+}
+
+input[type='checkbox']:checked + span {
+	text-decoration: line-through;
+}
+
+li {
+	list-style: none;
+}
