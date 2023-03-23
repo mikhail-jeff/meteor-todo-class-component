@@ -35,12 +35,12 @@ export default class App extends TrackerReact(Component) {
 		return (
 			<div>
 				<header>
-					<h1>Tasks ({this.tasks().length})</h1>
+					<h1>Todos ({this.tasks().length})</h1>
 				</header>
 
 				<InputForm />
 
-				<h3>Tasks List</h3>
+				<h3>Todo List</h3>
 
 				{this.tasks().length > 0 ? (
 					<ul>
@@ -54,7 +54,7 @@ export default class App extends TrackerReact(Component) {
 						})}
 					</ul>
 				) : (
-					<p>No tasks found!</p>
+					<p>No todos found!</p>
 				)}
 
 				<button onClick={this.deleteAllTask.bind(this)}>Clear List</button>

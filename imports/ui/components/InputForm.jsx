@@ -19,7 +19,6 @@ export default class InputForm extends Component {
 			<form onSubmit={this.addTask.bind(this)}>
 				<input
 					type='text'
-					placeholder='add new task'
 					ref={this.taskRef}
 				/>
 				<button type='submit'>Add</button>
